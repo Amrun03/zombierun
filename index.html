@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Escape Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <div id="score-display">Skor: <span id="score">0</span></div>
+            <div id="start-screen" class="overlay">
+                <h1>ZOMBIE ESCAPE</h1>
+                <p>Lari dari keturunan zombie! Lompat dan tunduk untuk elak rintangan.</p>
+                <button id="start-btn">MULA PERMAINAN</button>
+                <div class="controls-hint">
+                    <p><b>Kawalan:</b></p>
+                    <p>⌨️ Papan Kekunci: Space / Arrow Up (Lompat), Arrow Down (Tunduk)</p>
+                    <p>📱 Skrin Sentuh: Sentuh bahagian Atas (Lompat), Bahagian Bawah (Tunduk)</p>
+                </div>
+            </div>
+            <div id="game-over-screen" class="overlay hidden">
+                <h1 class="danger">GAME OVER!</h1>
+                <p>Anda telah tertangkap oleh Zombie!</p>
+                <p>Skor Akhir: <span id="final-score">0</span></p>
+                <button id="restart-btn">MAIN SEMULA</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
